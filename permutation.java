@@ -8,10 +8,11 @@ public class permutation {
 		// TODO Auto-generated method stub
 		Scanner sc=new Scanner(System.in);
 		String s=sc.next();
-		printpermutations(s,"");
+		permutation pr=new permutation();
+		pr.printpermutations(s,"");
 
 	}
-	public static void printpermutations(String str,String ans ) {
+	public  void printpermutations(String str,String ans ) {
 		if(str.length()==0) {
 			System.out.println(ans);
 			return;
